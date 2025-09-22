@@ -1,0 +1,33 @@
+.tarjeta-mueble {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-mueble:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.categoria {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: #777;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
