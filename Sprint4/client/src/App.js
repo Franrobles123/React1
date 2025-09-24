@@ -1,27 +1,29 @@
-import "./App.css";
-import TarjetaMueble from "./TarjetaMueble.js";
-
-export default function App() {
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Saludo from './Saludo'; // <-- 1. IMPORTAMOS NUESTRO COMPONENTE
+ 
+function App() {
   return (
-    <div>
-      <h1>Mueblería Jota</h1>
-      <TarjetaMueble
-        nombre="Sillón Reclinable"
-        categoria="Sala de Estar"
-        descripcion="Un sillón cómodo con tapizado de cuero y reclinación ajustable."
-      />
-      <TarjetaMueble
-        nombre="Mesa de Comedor"
-        categoria="Comedor"
-        descripcion="Mesa de madera maciza para 6 personas."
-      />
-      <TarjetaMueble
-        nombre="Cama Queen"
-        categoria="Dormitorio"
-        descripcion="Cama amplia con respaldo acolchado y estructura robusta."
-      />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        
+        {/* 2. USAMOS NUESTRO COMPONENTE */}
+        <Saludo />
+ 
+        <p>
+          ¡Estamos listos para empezar a construir!
+        </p>
+        
+        {/* ¡La reutilización es clave! Podemos usarlo cuantas veces queramos. */}
+        <Saludo />
+ 
+      </header>
     </div>
   );
 }
+ 
+export default App;
 
 
