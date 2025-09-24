@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Producto from './Producto'; // Importamos nuestro nuevo componente
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Mi Primer App de React</h1>
-      <p>Francisco Robles</p>
+      {/* Usamos el componente Producto */}
+      <Producto />
     </div>
   );
 }

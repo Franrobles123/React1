@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import Saludo from './Saludo'; // <-- 1. IMPORTAMOS NUESTRO COMPONENTE
  
 function App() {

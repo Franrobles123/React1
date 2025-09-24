@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/* Producto.css */
+.product-card {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 16px;
+  background: #0f172a;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+  color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.neon-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-title {
+  font-size: 1.8em;
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.product-subtitle {
+  color: #7dd3fc;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.product-desc {
+  font-size: 0.95em;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.features-list li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #e0f2fe;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  color: #67e8f9;
+  font-size: 1.1em;
+  margin-right: 8px;
+}
+
+.price-tag {
+  background-color: #06b6d4;
+  color: #0f172a;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.8);
+  margin-bottom: 12px;
+}
+
+.product-cta {
+  font-size: 0.9em;
+  color: #38bdf8;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1 1 200px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.keyboard-img {
+  max-width: 100%;
+  height: auto;
+  transform: rotate(-5deg);
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+  margin-top: -40px; /* 👈 Súbelo */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
