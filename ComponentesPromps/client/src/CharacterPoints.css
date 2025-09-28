@@ -1,0 +1,23 @@
+.character-sprite {
+  width: 32px;   /* 👈 ancho real de un frame */
+  height: 32px;  /* 👈 alto real de un frame */
+  background-image: url("/PNG12BITS.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; /* primer personaje */
+  image-rendering: pixelated;
+  transform: scale(4); /* lo agranda 4x */
+  margin: 20px;
+}
+
+
+.jump {
+  animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+  0%   { transform: translateY(0) scale(4); }
+  30%  { transform: translateY(-40px) scale(4); }
+  50%  { transform: translateY(-60px) scale(4); }
+  70%  { transform: translateY(-40px) scale(4); }
+  100% { transform: translateY(0) scale(4); }
+}
